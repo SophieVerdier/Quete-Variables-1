@@ -10,12 +10,12 @@ echo "J'ai vu le film";
 }
 else {
 echo "Je n'ai pas vu le film";}
+echo "<br/>";
 
 
 $dateSortie = 1989; 
 echo $dateSortie ."<br>".
 
-$note = "8.3"; 
+$note = 8.3; 
 echo $note;
 
-php/> 
