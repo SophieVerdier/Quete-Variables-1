@@ -1,32 +1,27 @@
-<?php 
 
-$string = "0@sn9sirppa@#?ia'jgtvryko1"; 
+<?php
 
-echo substr($string, 5, 13);
+$messageSecret = "0@sn9sirppa@#?ia'jgtvryko1";
+ $key = strlen($messageSecret)/2;
+ $firstMessage = substr($messageSecret, 5, $key);
+ $secondMessage = str_replace('@#?', ' ', $firstMessage);
+ $finalMessage = strrev($secondMessage);
+ echo $finalMessage;
+ echo ' ';
 
-echo "<br/>";
-$newString =  "sirppa@#?ia'j"; 
-echo str_replace('@'.'#'.'?', " ". " "." ", $newString);
-echo "<br/>";
-$final = "sirppa ia'j";
-echo strrev($final);
+ $messageSecret = "q8e?wsellecif@#?sel@#?setuotpazdsy0*b9+mw@x1vj";
+ $key = strlen($messageSecret)/2;
+ $firstMessage = substr($messageSecret, 5, $key);
+ $secondMessage = str_replace('@#?', ' ', $firstMessage);
+ $finalMessage = strrev($secondMessage);
+ echo $finalMessage;
+ echo ' ';
 
-echo "<br/>";
-$string2 = "q8e?wsellecif@#?sel@#?setuotpazdsy0*b9+mw@x1vj";
-echo substr($string2, 5, 23);
-echo "<br/>";
-$newString2 = "sellecif@#?sel@#?setuot"; 
-echo str_replace('@'.'#'.'?', " ". " "." ", $newString2);
-echo "<br/>";
-$final2 = "sellecif sel setuot";
-echo strrev($final2);
+ $messageSecret = "aopi?sgnirts@#?sedhtg+p9l!";
+ $key = strlen($messageSecret)/2;
+ $firstMessage = substr($messageSecret, 5, $key);
+ $secondMessage = str_replace('@#?', ' ', $firstMessage);
+ $finalMessage = strrev($secondMessage);
+ echo $finalMessage;
 
-echo "<br/>";
-$string3 = "aopi?sgnirts@#?sedhtg+p9l!";
-echo substr($string3, 5, 13);
-echo "<br/>";
-$newString3 = "sgnirts@#?sed"; 
-echo str_replace('@'.'#'.'?', " ". " "." ", $newString3);
-echo "<br/>";
-$final3= "sgnirts sed"; 
-echo strrev($final3);
+ ?>
